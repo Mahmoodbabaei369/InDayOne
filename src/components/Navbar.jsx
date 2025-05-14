@@ -16,13 +16,31 @@ const Navbar = () => {
                 </div>
             {/*mobile link list*/}
             <div
-             className={'w-full h-screen flex flex-col item-center justify-center absolute top-16 bg-red ${open ? "-right-0" : "-right-[100%]"}'}
+             className={`w-full h-screen flex flex-col content-center justify-items-center absolute top-16 rgb(224, 238, 224) transition-all ease-in-out ${open ? "-right-0" : "-right-[100%]"}`}
              >
-                menue
+                <a href="/">Home Green</a>
+                <a href="/">Blog</a>
+                <a href="/">Network Security</a>
+                <a href="/">App Security</a>
+                <a href="/">Web Security</a>
+                <a href="/">About</a>
+                <a>
+                <button className="py-1  px-2 rounded-3xl bg-blue-700 text-white">Login 👋</button>
+                </a>
             </div>
             </div>    
             {/*DesktopMenue*/}
-            <div className="hidden ">D</div>
+            <div className="hidden lg:flex p-3 md:flex item-center gap-8 xl:gap-12 font-bold">
+                <a href="/">Home Green</a>
+                <a href="/">Blog</a>
+                <a href="/">Network Security</a>
+                <a href="/">App Security</a>
+                <a href="/">Web Security</a>
+                <a href="/">About</a>
+                <a>
+                <button className="py-1  px-2 rounded-3xl bg-blue-700 text-white">Login 👋</button>
+                </a>
+            </div>
         </div>
 
     );
